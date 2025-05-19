@@ -1,37 +1,76 @@
-# Simple Python Chatbot
+# 🩺 Patient Information Chatbot (NLP-Based)
 
-A simple Python chatbot built using Natural Language Processing (NLP) and deep learning. It also has a Tkinter-based GUI for easy interaction.
+This is a **Natural Language Processing (NLP)** based terminal chatbot that provides **basic support and information** for healthcare-related queries like:
+- Adverse Drug Reactions
+- Blood Pressure Management
+- Hospital and Pharmacy Search
 
-## Demo
+It simulates a hospital assistant helping users find relevant information using a predefined intent-based response system.
 
-Here's a preview of the chatbot in action:
+---
 
-<img src="demo.PNG" alt="Chatbot Demo" width="400">
+##  Features
 
-## Features
+- Responds to greetings, thanks, and farewells
+- Helps navigate through:
+  - **Adverse Drug Reaction** modules
+  - **Blood Pressure tracking and results**
+  - **Pharmacy search by name**
+  - **Hospital search by name, location, and type**
 
-- NLP-powered chatbot using intents
-- Deep learning model for predictions
-- Tkinter GUI for user-friendly interface
-- Also includes terminal-based interaction option
+---
 
-## Installation
+##  How to Run the Project
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Anushka0206/chatbot-nlp.git
-## Project Structure
+### 1. Clone the Repository
 
-```
+git clone https://github.com/Anushka0206/chatbot-nlp.git
+cd chatbot-nlp
+2. Install Required Libraries
+bash
+Copy
+Edit
+pip install nltk
+- Make sure Python is installed.
+
+3. Run the Chatbot in Terminal
+bash
+Copy
+Edit
+python chatbot.py
+#### Project Structure
+bash
+Copy
+Edit
 chatbot-nlp/
-├── chatbot_model.h5          # Trained chatbot model
-├── chatbot_response.py       # Chatbot logic (terminal version)
-├── chatgui.py                # Tkinter GUI interface
-├── classes.pkl               # Pickle file of output classes
-├── words.pkl                 # Pickle file of input words
-├── intents.json              # Intent dataset
-├── train_chatbot.py          # Model training script
-├── demo.PNG                  # Chatbot demo image
-├── README.md                 # Project documentation
-```
+│
+├── intents.json         # Contains training data (intents, patterns, responses)
+├── chatbot.py           # Main script to run the chatbot
+├── words.pkl            # Preprocessed words file
+├── classes.pkl          # Preprocessed classes (intents)
+├── README.md            # Project documentation
+#### Sample Chat
+vbnet
+Copy
+Edit
+You: Hello
+Bot: Hello, thanks for asking.
 
+You: I want to check my blood pressure history
+Bot: Please provide Patient ID
+
+You: Find me a pharmacy
+Bot: Please provide pharmacy name
+#### Use Cases
+College/minor-level AI/NLP project
+
+Healthcare demo for basic hospital chatbot
+
+Foundation for building advanced ML-based virtual assistants
+
+#### Future Improvements
+Integrate with actual medical APIs/databases
+
+Add voice input/output
+
+GUI interface using Tkinter or web
