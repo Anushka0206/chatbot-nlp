@@ -44,11 +44,11 @@ Copy
 Edit
 chatbot-nlp/
 │
-├── intents.json         # Contains training data (intents, patterns, responses)
-├── chatbot.py           # Main script to run the chatbot
-├── words.pkl            # Preprocessed words file
-├── classes.pkl          # Preprocessed classes (intents)
-├── README.md            # Project documentation
+├── intents.json         # Contains training data (intents, patterns, responses) <br>
+├── chatbot.py           # Main script to run the chatbot <br>
+├── words.pkl            # Preprocessed words file <br>
+├── classes.pkl          # Preprocessed classes (intents) <br>
+├── README.md            # Project documentation <br>
 #### Sample Chat
 vbnet
 Copy
