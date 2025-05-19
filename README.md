@@ -42,8 +42,8 @@ python chatbot.py
 bash
 Copy
 Edit
-chatbot-nlp/
-│
+chatbot-nlp/ <br>
+│ <br>
 ├── intents.json         # Contains training data (intents, patterns, responses) <br>
 ├── chatbot.py           # Main script to run the chatbot <br>
 ├── words.pkl            # Preprocessed words file <br>
